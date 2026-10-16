@@ -2,17 +2,17 @@
 
 ## Current assessment
 
-The intended scope is a browser-based workout builder and interval timer, with general exercise guidance. The workout session now shows a simple looping 2D motion guide for each exercise, with a short caption and movement phases. These illustrations are basic visual references, not professionally reviewed coaching. The exercise content has not been professionally reviewed. The project owner confirms that this workspace has not been posted to GitHub and has not been deployed.
+The intended scope is a browser-based workout builder and interval timer, with general exercise guidance. The workout session now shows a simple looping 2D motion guide for each exercise, with a short caption and movement phases. These illustrations are basic visual references, not professionally reviewed coaching. The exercise content has not been professionally reviewed. The source was pushed to the public `WhatIsSutsDoing/suts-workout-plan` repository on the `main` branch. The site has not been deployed.
 
-This workspace has no Git metadata. A GitHub Pages workflow is present, but it will only run after the project is pushed to a repository with Pages configured.
+The workspace is connected to that GitHub repository. The GitHub Pages workflow started after the initial push but stopped at **Configure GitHub Pages** because Pages is not enabled for the repository yet.
 
 ## Release blockers
 
 - [x] **Decide and state the product’s intended use.** The app is a workout builder and timer with general exercise guidance, not personalized coaching or medical advice.
 - [ ] **Have exercise content reviewed by a qualified professional.** Review the form cues, common mistakes, phase names, and safety language across all exercises. Correct or remove advice that is ambiguous, unsafe, or not appropriate for the stated audience.
 - [x] **Set expectations for the motion guides.** The workout flow labels each 2D animation as a motion guide and includes a caption and movement phases. Keep the qualified-professional review below as a release blocker.
-- [ ] **Confirm publication and rights.** Check the GitHub repository visibility and Pages settings before publishing. Confirm that exercise copy, artwork, fonts, names, and any future media may legally be distributed, and replace the README’s “Private - All rights reserved” placeholder with the intended license or usage terms.
-- [ ] **Test the actual release path.** Confirm that GitHub Pages is configured for this workflow, deploy from the intended branch, and verify the resulting URL, assets, and browser behavior. The `private: true` package setting does not make a GitHub Pages site private.
+- [ ] **Confirm rights and usage terms.** The repository is public. Confirm that exercise copy, artwork, fonts, names, and any future media may legally be distributed, and replace the README’s no-license notice with the intended license or usage terms.
+- [ ] **Test the actual release path.** In repository settings, enable GitHub Pages with **GitHub Actions** as the source. Then confirm the workflow passes from `main` and verify the resulting URL, assets, and browser behavior. The `private: true` package setting does not make a GitHub Pages site private.
 
 ## Strongly recommended before launch
 
@@ -30,6 +30,7 @@ This workspace has no Git metadata. A GitHub Pages workflow is present, but it w
 - [x] The app supports exercise selection, ordering, work/rest settings, rounds, estimated duration, and a guided interval session.
 - [x] The timer calculates from deadlines and catches up across elapsed intervals after delayed updates.
 - [x] The Pages workflow uses `npm ci`, validates the data, runs timer tests, and limits write permissions to the deploy job.
+- [x] The initial source commit was pushed to the public `WhatIsSutsDoing/suts-workout-plan` repository on `main` (`5fc7435`).
 - [x] `npm run check:data`, `npm test`, and `npm run build` pass in this workspace.
 - [ ] Run a clean lockfile install and dependency audit before publication.
 
