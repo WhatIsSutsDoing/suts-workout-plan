@@ -1,0 +1,62 @@
+```
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment
+.env*
+!.env.example
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+*.coverage
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Distribution / packaging
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# IDE
+*.swp
+*.swo
+
+# Node.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React / Vite specific
+vite.config.js
+vite.config.d.ts
+
+```
